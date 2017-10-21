@@ -11,7 +11,7 @@
       <div class="inputs">
         <input placeholder="tom lapp"></input>
       </div>
-      <button class="AddOption">en till</button>
+      <button class="addOption">en till</button>
     </div>
     <div class="resultSection" style="display: none;"></div>
     <button class="scramble">skaka om burken!</button>
@@ -23,7 +23,19 @@
         var add_option = function() {
           $('.inputs').append('<input placeholder="tom lapp"></input>')
         }
-        $('.AddOption').hover(add_option)
+        $('.addOption').click(add_option)
+        var options = []
+        var submit = function() {
+          $('.inputsc').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+            options.push($(this).val())
+          })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.resultSection').text(winner)
+        }
+        $('.scramble').click(submit)
       })
     </script>
   </body>

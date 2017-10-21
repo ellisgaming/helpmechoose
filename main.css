@@ -29,7 +29,7 @@ input {
   margin-top: 10px;
 }
 
-.AddOption {
+.addOption {
   margin-top: 10px;
 }
 
@@ -37,6 +37,14 @@ input {
   background-color: #A6D0E4
 }
 
-.AddOption {
+.addOption {
   background-color: #CABBE9
+}
+
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
