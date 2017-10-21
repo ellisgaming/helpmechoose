@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
-  background-color: lightblue
+  background-color: #D4A5A5
 }
 
 h1 {
@@ -31,4 +31,12 @@ input {
 
 .AddOption {
   margin-top: 10px;
+}
+
+.scramble {
+  background-color: #A6D0E4
+}
+
+.AddOption {
+  background-color: #CABBE9
 }
